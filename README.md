@@ -86,8 +86,8 @@ cv2.destroyAllWindows()
 ref_x = np.float32([[1,0,0],[0,-1,row],[0,0,1]])
 ref_y = np.float32([[-1,0,col],[0,1,0],[0,0,1]])
 
-reflect_x= cv2.warpPerspective(original1,ref_x,(col,row))
-reflect_y = cv2.warpPerspective(original1,ref_y,(col,row))
+reflect_x= cv2.warpPerspective(original,ref_x,(col,row))
+reflect_y = cv2.warpPerspective(original,ref_y,(col,row))
 
 cv2.imshow('reflected_x',reflect_x)
 cv2.waitKey(0)
